@@ -1,24 +1,30 @@
 import { useState } from 'react'
 
-const Counter = () => {
-  const [count, setCount] = useState(0)
+const Counter = (props) => {
+  const [count, setCounter] = useState(0)
 
-  const plus = () => {
-    setCount(count + 1)
+  const counterPlus = () => {
+    setCounter((prev) => prev + 1)
   }
 
-  const minus = () => {
-    setCount(count - 1)
+  const counterMinus = () => {
+    setCounter((prev) => prev - 1)
   }
 
   return (
-    <div className="counter">
+    <div className="counter none">
       <h2 className="counter__title">{count}</h2>
-      <button className="counter__btn" onClick={plus}>
-        plus
+      <button
+        className="counter__plus"
+        onClick={counterPlus}
+        aria-label={props.ariaLabelPlus}>
+        Plus
       </button>
-      <button className="counter__btn" onClick={minus}>
-        minus
+      <button
+        className="counter__minus"
+        onClick={counterMinus}
+        aria-label={props.ariaLabelMinus}>
+        Minus
       </button>
     </div>
   )

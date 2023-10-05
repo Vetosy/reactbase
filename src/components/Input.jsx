@@ -4,7 +4,7 @@ const Input = () => {
   const [value, setValue] = useState('Текст в инпуте')
 
   return (
-    <div className="input__wrapper">
+    <div className="input__wrapper none">
       <h2 className="input__title">{value}</h2>
       <input
         className="input__value"
