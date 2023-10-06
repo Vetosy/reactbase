@@ -17,7 +17,7 @@
 
 .post__content {
   padding: 10px 20px;
-  border: 1px solid rgb(207, 205, 205);
+  border: 1px solid teal;
 }
 
 .post__title {
@@ -28,15 +28,4 @@
 .post__descr {
   max-width: 500px;
   margin-bottom: 20px;
-}
-
-.post__btn {
-  display: block;
-  padding: 10px;
-  width: 100%;
-  border: none;
-  border-radius: 10px;
-  cursor: pointer;
-  font-size: 20px;
-  background-color: rgb(250, 169, 169);
 }
